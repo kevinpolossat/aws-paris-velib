@@ -1,0 +1,45 @@
+{
+    "TransformationPipeline": {
+        "lambda": [
+            {
+                "Nombre de bornes disponibles": 30,
+                "Nombre vélo en PARK+": 0,
+                "Nombres de bornes en station": 36,
+                "nbFreeDock": 0,
+                "Nombre de vélo mécanique": 4,
+                "nbDock": 0,
+                "Nombre vélo électrique": 2,
+                "Code de la station": 14005,
+                "longitude": 48.8330564773,
+                "latitude": 2.3329411447,
+                "time": 1554999121888
+            },
+            {
+                "Nombre de bornes disponibles": 16,
+                "Nombre vélo en PARK+": 0,
+                "Nombres de bornes en station": 18,
+                "nbFreeDock": 1,
+                "Nombre de vélo mécanique": 0,
+                "nbDock": 1,
+                "Nombre vélo électrique": 2,
+                "Code de la station": 20005,
+                "longitude": 48.8492660436,
+                "latitude": 2.41233032884,
+                "time": 1554999121888
+            },
+            {
+                "Nombre de bornes disponibles": 13,
+                "Nombre vélo en PARK+": 0,
+                "Nombres de bornes en station": 21,
+                "nbFreeDock": 0,
+                "Nombre de vélo mécanique": 6,
+                "nbDock": 0,
+                "Nombre vélo électrique": 2,
+                "Code de la station": 24007,
+                "longitude": 48.903222,
+                "latitude": 2.279097,
+                "time": 1554999121888
+            }
+        ]
+    }
+}
