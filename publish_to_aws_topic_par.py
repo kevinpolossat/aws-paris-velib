@@ -20,7 +20,7 @@ def publish_wrapper(lineID, line):
 
     # Publish JSON data to AWS IoT
     client.publish(
-        topic='iot/open_data_velib',
+        topic='iot/velib_paris',
         qos=1,
         payload=json.dumps(payload))
 
