@@ -11,6 +11,7 @@ const colsToKeep = [
     13, // Nombre vélo électrique
     14, // Code de la station
     15, // Nom de la station 
+    16, // Nom de la station 
     19, // geo
 ];
 
@@ -49,7 +50,7 @@ let req = _ => {
                         let [latitude, longitude] = values[c].split(',');
                         res["latitude"] = parseFloat(latitude);
                         res["longitude"] = parseFloat(longitude);
-                    } else if (key === "Nom de la station") {
+                    } else if (key === "nom_de_la_station") {
                         res[key] = values[c];
                     } else {
                         res[key] = parseInt(values[c], 10);
