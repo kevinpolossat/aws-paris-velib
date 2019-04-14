@@ -82,5 +82,6 @@ Monthly charges = lambda + Iot = $0.000000625 + $0.054 + $0.054 + $0.0414 + $0.0
 ## resources
 
 * https://aws.amazon.com/blogs/iot/using-aws-iot-analytics-to-prepare-data-for-quicksight-time-series-visualizations/  
+* https://aws.amazon.com/blogs/aws/launch-presenting-aws-iot-analytics/
 * https://docs.aws.amazon.com/iotanalytics/latest/userguide/getting-started.html  
 * https://opendata.paris.fr/explore/dataset/velib-disponibilite-en-temps-reel/information
