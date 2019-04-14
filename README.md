@@ -79,6 +79,11 @@ Monthly Charges = 0,30 * 50 = 15$ per month
 #### total
 Monthly charges = lambda + Iot = $0.000000625 + $0.054 + $0.054 + $0.0414 + $0.0117 + 18$ + 15$ = $33.1611006
 
+## What's next ?
+
+* I would like to automate the deployment using cloud formation
+* Provide real time analysis and anomaly detection.  
+
 ## resources
 
 * https://aws.amazon.com/blogs/iot/using-aws-iot-analytics-to-prepare-data-for-quicksight-time-series-visualizations/  
