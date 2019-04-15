@@ -4,7 +4,7 @@
 The goal of this project was to see how fast I could deliver an IoT solution with insight on timeserie data using AWS and experience myself how easy it is to build a solution around AWS and most of all to avoid to do things as much as possible, reduce heavy lifting and enjoy the journey.  
 
 ## The right data
-* Finding open source IoT data is was kinda hard and I endup finding open source from Paris (https://opendata.paris.fr/explore/dataset/velib-disponibilite-en-temps-reel/information/). I Have to say I was quite surprise that such data was provided and available. I then decided to use it.  
+* Finding open source IoT data it was kinda hard and I end up finding open source from Paris (https://opendata.paris.fr/explore/dataset/velib-disponibilite-en-temps-reel/information/). I Have to say I was quite surprise that such data were provided and available. I then decided to use it. 
 * For each velib station located in Paris, data about the current availability are given.
 * The data is updated every minute. 
 * The website expose an api to download an actualized dataset under the csv format. 
@@ -19,12 +19,12 @@ Here is a sanple of the data:
 | 16                           | 0                    | 21                           | no                | 1            | yes                            | 21              | yes           | 0          | 0                        | no     | 0      | 5                      | 0                    | 9020               | Toudouze - Clauzel              | Operative         | yes              | 48.8792959173, 2.33736008406 | 2018-11-30 | 
 
 ## Simulating the iot sensors
-- Data collection: a program that call the api. this task is done by 'getAndSaveData.js'.
+- Data collection: a program that call the api. This task is done by 'getAndSaveData.js'.
 - Data publishing: is done by 'publish_to_aws_topic_par.py'
-- 'push_all_ds.sh' is a simple script to push all the file presents in a 'datasets' direcetory.
+- 'push_all_ds.sh' is a simple script to push all the file presents in a 'datasets' directory.
 
 ## Aws stack
-From the aws point of view we're using 3 componenents:
+From the aws point of view we're using 3 components:
 
 ### View
 ![Alt text](resources/aws-paris-velib.png?raw=true "abstract view")  
@@ -32,15 +32,15 @@ From the aws point of view we're using 3 componenents:
 ### AWS Lambda
 [AWS Lambda](https://aws.amazon.com/lambda/) lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running.  
 
-I used a lambda in the IoT pipeline, it is used to enrich the payload abd output a resulting message. 
+I used a lambda in the IoT pipeline. It is used to enrich the payload add output a resulting message. 
 
 ### AWS IoT Analytics  
 [AWS IoT Analytics ](https://aws.amazon.com/iot-analytics/)is a fully-managed service that makes it easy to run and operationalize sophisticated analytics on massive volumes of IoT data without having to worry about the cost and complexity typically required to build an IoT analytics platform. It is the easiest way to run analytics on IoT data and get insights to make better and more accurate decisions for IoT applications and machine learning use cases.  
 
-1.  A channel is bound to a MQTT topic on which our sensors are going to publish the data in. We can monitor the channell activity through the Iot Analytics console.
+1. A channel is bound to an MQTT topic on which our sensors are going to publish the data in. We can monitor the channel activity through the Iot Analytics console.
 ![Alt text](resources/channel.png?raw=true "abstract view")  
 
-2.  A pipeline that is going to enrich the original the payload
+2.  A pipeline that is going to enrich the original payload
 3.  A lambda in the pipeline to enrich the payload
 ![Alt text](resources/lambda.png?raw=true "abstract view")  
 
