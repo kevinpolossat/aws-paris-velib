@@ -4,7 +4,7 @@
 The goal of this project was to see how fast I could deliver an IoT solution with insight on timeserie data using AWS and experience myself how easy it is to build a solution around AWS and most of all to avoid to do things as much as possible, reduce heavy lifting and enjoy the journey.  
 
 ## The right data
-* Finding open source IoT data it was kinda hard and I end up finding open source from Paris (https://opendata.paris.fr/explore/dataset/velib-disponibilite-en-temps-reel/information/). I Have to say I was quite surprise that such data were provided and available. I then decided to use it. 
+* Finding open source IoT data was kinda hard and I end up finding open source from Paris (https://opendata.paris.fr/explore/dataset/velib-disponibilite-en-temps-reel/information/). I Have to say I was quite surprise that such data were provided and available. I then decided to use it. 
 * For each velib station located in Paris, data about the current availability are given.
 * The data is updated every minute. 
 * The website expose an api to download an actualized dataset under the csv format. 
